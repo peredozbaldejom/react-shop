@@ -3,6 +3,6 @@ import styles from '../page.module.css'
 
 export default function Footer() {
   return (
-    <div>footer</div>
+    <div className={styles.footer}>footer</div>
   )
 }
