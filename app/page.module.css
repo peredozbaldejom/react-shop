@@ -3,28 +3,28 @@
     margin: 50px auto;
 }
 
-header .logo {
+.logo {
     font-size: 20px;
     font-weight: 600;
 }
 
-header ul.nav {
+ul.nav {
     float: right;
     list-style: none;
 }
 
-header ul.nav li {
+ul.nav li {
     display: inline;
     margin-left: 25px;
     cursor: pointer;
     transition: opacity 500ms ease;
 }
 
-header ul.nav li:hover {
+ul.nav li:hover {
     opacity: 0.5;
 }
 
-header .presentation {
+.presentation {
     margin: 50px 0;
     background: url('../public/mt.jpg');
     background-size: cover;
@@ -36,7 +36,7 @@ header .presentation {
     position: relative;
 }
 
-header .presentation::after {
+.presentation::after {
     position: absolute;
     content: 'Metall is here... inside';
     top: 100px;
@@ -47,7 +47,7 @@ header .presentation::after {
     color: #fff;
 }
 
-header .presentation::before {
+.presentation::before {
     position: absolute;
     content: 'the best price';
     top: 210px;
@@ -56,6 +56,47 @@ header .presentation::before {
     font-size: 20px;
     font-weight: 200;
     color: #fff;
+}
+
+.header {
+    position: relative;
+}
+
+.shopCartBut {
+    float: right;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+
+.shopCartBut:hover, .active {
+    color: #dc3d3d;
+    transform: scale(1.5);
+}
+
+.empty {
+    margin-bottom: 20px;
+}
+
+.shopCart{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 450px;
+    background: #fafafa;
+    -webkit-box-shadow: 4px 5px 15px -7px #606060;
+    box-shadow: 4px 5px 15px -7px #606060;
+    z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.summa {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .footer {

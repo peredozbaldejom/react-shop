@@ -1,12 +1,13 @@
 import Item from '@/app/ui/item'
+import styles from './items.module.css'
 
-export default function Items({ items }) {
+export default function Items({ items, onAdd }) {
 
   return (
     <div>
-        <ul>
-          {items.map(elem => <li key={elem.id}><Item el={elem}/></li>)}        
-        </ul>
+        <div className={styles.items}>
+          {items.map(elem => <div key={elem.id} className={styles.item}><Item el={elem} onAdd={onAdd}/></div>)}        
+        </div>
     </div>
   )
 }
